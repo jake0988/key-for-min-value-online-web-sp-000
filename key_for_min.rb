@@ -3,10 +3,17 @@
 
 def key_for_min_value(name_hash)
   name_hash.collect do |key, value|
-    if key.is_empty?
+    arrk = []
+    arrv = []
+    i = 0
+    if name_hash.is_empty?
       nil
     else
-      key
+       arrv << value
+       arrk << key
     end
   end
+  a = arrv.min
+  b = arrv.index(a)
+  arrk[b]
 end
