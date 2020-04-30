@@ -6,7 +6,7 @@ def key_for_min_value(name_hash)
     arrk = []
     arrv = []
     i = 0
-    if name_hash.is_empty?
+    if name_hash.empty?
       nil
     else
        arrv << value
