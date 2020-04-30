@@ -6,7 +6,7 @@ def key_for_min_value(name_hash)
   arrv = []
   name_hash.collect do |key, value|
     i = 0
-    if key.empty?
+    if !key
       nil
     else
        arrv << value
