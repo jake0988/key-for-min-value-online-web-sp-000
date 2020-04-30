@@ -4,14 +4,13 @@
 def key_for_min_value(name_hash)
   arrk = []
   arrv = []
+  if name_hash.empty?
+    return nil
   name_hash.collect do |key, value|
     i = 0
-    if name_hash.empty?
-      return nil
-    else
        arrv << value
        arrk << key
-    end
+
   end
   a = arrv.min
   b = arrv.index(a)
